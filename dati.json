@@ -1,0 +1,16 @@
+[{
+    "via": "Via Roma",
+    "civico": 1,
+    "cap": "24100",
+    "provincia": "BG"
+},{
+    "via": "Via Milano",
+    "civico": 5,
+    "cap": "24100",
+    "provincia": "BO"
+},{
+    "via": "Via Bologna",
+    "civico": 4,
+    "cap": "24100",
+    "provincia": "PA"
+}]
