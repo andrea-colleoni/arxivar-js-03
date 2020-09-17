@@ -1,0 +1,7 @@
+- pannello di login stilizzato con bootstrap
+- su click del login
+    - ajax verso login.json (con dati di utenti)
+    - verificare match user e password rispetto al JSON ricevuto
+    - se login OK => memorizzo user in localSorage; nascondo pannello login;  mostro pannello welcome
+         con dati in tabella DataTables
+    - se login KO => mostro toast errore login; azzero i campi di input
