@@ -1,0 +1,17 @@
+.login-panel {
+    border: 1px solid gray;
+}
+
+.welcome-panel {
+    border: 1px solid gray;
+    background-color: #CCFFCC;
+}
+
+.error-panel {
+    border: 1px solid gray;
+    background-color: #FFCCCC;
+}
+
+.hidden {
+    display: none;
+}
