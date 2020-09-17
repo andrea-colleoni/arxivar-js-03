@@ -6,4 +6,7 @@ http.onreadystatechange = () => {
     console.log(o);
 }
 http.open('GET', 'dati.json');
-http.send();
+var a = {
+    nome: 'Mario'
+}
+http.send(JSON.stringify(a));
