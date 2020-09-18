@@ -1,7 +1,11 @@
 'use strict';
 
 // Define the `phonecatApp` module
-var phonecatApp = angular.module('phonecatApp', ['phoneListModule']);
+var phonecatApp = angular.module('phonecatApp', [
+  'ngRoute', 
+  'phoneListModule', 
+  'phoneDetailModule',
+]);
 
 /*
 phonecatApp.component('greetUser', {
