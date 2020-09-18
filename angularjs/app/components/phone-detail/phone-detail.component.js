@@ -1,13 +1,16 @@
 angular.module('phoneDetailModule')
     .component('phoneDetail', {
     templateUrl: 'components/phone-detail/phone-detail.template.html',
-    controller: ['$routeParams', '$http', function PhoneDetailComponent($routeParams, $http) {
+    controller: ['$routeParams', 'Phone', function PhoneDetailComponent($routeParams, Phone) {
         this.componentName = 'Detail';
         this.phoneId = $routeParams.phoneId;
         var self = this;
 
-        $http.get(`phones/${this.phoneId}.json`).then(function (response) {
-            self.phone = response.data;
+        self.setImage = function setImage(imageUrl) {
+            self.mainImageUrl = imageUrl;
+        };
+        self.phone = Phone.get({phoneId: this.phoneId}, function(phone) {
+            self.setImage(phone.images[0]);
         });
     }],
 });
